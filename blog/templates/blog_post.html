@@ -1,0 +1,16 @@
+<title>{{ post.seo_title }}</title>
+<meta name="description" content="{{ post.meta_description }}">
+
+<!-- Post title -->
+<h2>{{ post.title }}</h2>
+
+<!-- Post author + Publish date -->
+{# Posted by <a href="{% url 'blog_author' author.slug %}">{{ post.author.first_name }} {{ post.author.last_name }}</a> on {{ post.published }} #}
+
+<!-- Post categories -->
+{% for category in post.categories %}
+<a href="{% url 'blog_category' category.slug %}">{{ category.name }}</a>
+{% endfor %}
+
+<!-- Post body -->
+{{ post.body|safe }}
