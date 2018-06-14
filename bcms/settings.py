@@ -25,7 +25,7 @@ SECRET_KEY = '6%6f^9oa_s7hd68p--2aza+vhl91r2(z2n07)%ur(ehgz3!i4('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mannargudi.herokuapp.com', '127.0.0.1']
 
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
