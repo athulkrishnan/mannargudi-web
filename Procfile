@@ -1,3 +1,2 @@
-web:gunicorn -b 0.0.0.0:$PORT -w 3
-bcms.wsgi:application
+web: gunicorn -b 0.0.0.0:$PORT -w 3 bcms.wsgi:application
 
