@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:8000  bcms.wsgi:application
+web: gunicorn bcms.wsgi --log-file -

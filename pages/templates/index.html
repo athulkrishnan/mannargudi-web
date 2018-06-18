@@ -45,17 +45,19 @@
 
         <div class="full-wrapper header">
         	<div class="main-logo">
-            	<a class="symbol" href="index.html#"><div class="navbar-brand"><ul><li></li><li></li><li></li></ul></div>sonorama<span>.</span></a>
+            	<!-- <a class="symbol" href="/#"><div class="navbar-brand"><ul><li></li><li></li><li></li></ul></div>sonorama<span>.</span></a> -->
+              <img src="{% static "img/nadagruha.png" %}"  height="35">
             </div>
 
             <nav class="main-menu">
             	<ul>
-                	<li class="current"><a href="index.html#anchor0">Home</a></li>
-                    <li><a href="index.html#anchor01">Last News</a></li>
-                    <li><a href="index.html#anchor02">Gigs</a></li>
-                    <li><a href="index.html#anchor03">Discography</a></li>
-                    <li><a href="index.html#anchor04">Gallery</a></li>
-                    <li><a href="index.html#anchor05">Contact</a></li>
+                	  <li class="current"><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
                     <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
@@ -63,12 +65,13 @@
             <nav id="nav2" role="navigation">
                 <a class="jump-menu" title="Show navigation">Show navigation</a>
                 <ul>
-                    <li><a href="index.html#anchor0">Home</a></li>
-                    <li><a href="index.html#anchor01">Last News</a></li>
-                    <li><a href="index.html#anchor02">Gigs</a></li>
-                    <li><a href="index.html#anchor03">Discography</a></li>
-                    <li><a href="index.html#anchor04">Gallery</a></li>
-                    <li><a href="index.html#anchor05">Contact</a></li>
+                    <li><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
                     <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
@@ -83,8 +86,8 @@
                 <img src="{% static "img/slider/slider-03.jpg" %}">
         	</div>
         	<nav class="slides-navigation">
-            	<a href="index.html#" class="next"></a>
-            	<a href="index.html#" class="prev"></a>
+            	<a href="/#" class="next"></a>
+            	<a href="/#" class="prev"></a>
         	</nav>
         </section> <!-- end Slider -->
 
@@ -94,7 +97,7 @@
                     <div class="top-spacer one"></div>
                     <div class="top-spacer two"></div>
                     <img src="{% static "img/slider/sonorama.png" %}">
-                    <div class="spacer-box"></div>
+                    <!-- <div class="spacer-box"></div> -->
 
                 </div>
             </div>
@@ -103,543 +106,15 @@
     	<div class="full-wrapper">
             <div class="player-container"> <!-- Audio Player -->
                 <div class="audio-player">
-                    <audio preload="none" src="audio/mp3/Daft_Punk_Giorgio_by_Moroder_Stellar_Dreams_Remix.mp3"></audio>
+                    <audio autoplay  preload="none" src="{% static "audio/mp3/media_1.mp3" %}"></audio>
                     <ol class="home-playlist">
-                        <li class="playing"><a href="index.html#" data-track="Daft Punk - Giorgio Moroder Stellar Dreams Remix" data-src="audio/mp3/Daft_Punk_Giorgio_by_Moroder_Stellar_Dreams_Remix.mp3">dead wrong intro</a></li>
-                        <li><a href="index.html#" data-track="Nightcrawler - Genesis (Feat Dana Jean Phoenix)" data-src="audio/mp3/nightcrawler_genesis_feat-dana-jean-phoenix.mp3">juicy-r</a></li>
-                        <li><a href="index.html#" data-track="Yosef The Soul - Run Away" data-src="audio/mp3/yosef_the_soul-run_away.mp3">juicy-r</a></li>
+                        <li class="playing"><a href="/#" data-track="Mannargudi - Sample" data-src="{% static "audio/mp3/media_1.mp3" %}">dead wrong intro</a></li>
+                        <!-- <li><a href="/#" data-track="Nightcrawler - Genesis (Feat Dana Jean Phoenix)" data-src="audio/mp3/nightcrawler_genesis_feat-dana-jean-phoenix.mp3">juicy-r</a></li>
+                        <li><a href="/#" data-track="Yosef The Soul - Run Away" data-src="audio/mp3/yosef_the_soul-run_away.mp3">juicy-r</a></li> -->
                     </ol>
                 </div>
             </div> <!-- end Audio Player -->
         </div>
-
-        <div id="anchor01"></div>
-        <div class="main-wrapper">
-            <section class="section"><!-- Last News -->
-                <h1>Last News</h1>
-                <div class="spacer"></div>
-                <div class="last-news-wrapper">
-                    <div class="last-news-container">
-                        <div class="news-nav">
-                            <div class="last-news-next"></div>
-                            <div class="last-news-prev"></div>
-                        </div>
-                        <div class="news-box">
-                            <ul>
-                                <li class="start"></li>
-                                <li id="news-01.html" class="last-news"> <!-- Type One Thumb on Top -->
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-05.jpg" %}">
-                                    </div>
-                                    <div class="news-info">
-                                        <h1>New Remix</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                </li><!-- end Type One -->
-                                <li id="news-02.html" class="last-news"> <!-- Type Two Thumb on Bottom -->
-                                    <div class="news-info">
-                                        <h1>New Photo</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-03.jpg" %}">
-                                    </div>
-                                </li><!-- end Type Two -->
-                                <li id="news-03.html" class="last-news"> <!-- Type One Thumb on Top -->
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-06.jpg" %}">
-                                    </div>
-                                    <div class="news-info">
-                                        <h1>New Remix</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                </li><!-- end Type One -->
-                                <li id="news-04.html" class="last-news"> <!-- Type Two Thumb on Bottom -->
-                                    <div class="news-info">
-                                        <h1>New Photo</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-07.jpg" %}">
-                                    </div>
-                                </li><!-- end Type Two -->
-
-                                <li id="news-05.html" class="last-news"> <!-- Type One Thumb on Top -->
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-01.jpg" %}">
-                                    </div>
-                                    <div class="news-info">
-                                        <h1>New Remix</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                </li><!-- end Type One -->
-                                <li id="news-06.html" class="last-news"> <!-- Type Two Thumb on Bottom -->
-                                    <div class="news-info">
-                                        <h1>New Photo</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-02.jpg" %}">
-                                    </div>
-                                </li><!-- end Type Two -->
-                                <li id="news-07.html" class="last-news"> <!-- Type One Thumb on Top -->
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-03.jpg" %}">
-                                    </div>
-                                    <div class="news-info">
-                                        <h1>New Remix</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                </li><!-- end Type One -->
-                                <li id="news-08.html" class="last-news"> <!-- Type Two Thumb on Bottom -->
-                                    <div class="news-info">
-                                        <h1>New Photo</h1>
-                                        <p>Amazing photo called neon blue available on my gallery</p>
-                                        <div class="news-date">2013.08.10</div>
-                                    </div>
-                                    <div class="news-thumb">
-                                        <img src="{% static "img/news/thumb-news-04.jpg" %}">
-                                    </div>
-                                </li><!-- end Type Two -->
-                                <li class="end"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </section><!-- end Last News -->
-
-            <div class="clear"></div>
-            <div id="news-show"></div>
-            <section class="news-window">
-                <div class="news-content"></div><!-- AJAX Dinamic Content -->
-            </section>
-
-        </div><!-- end Main Wrapper -->
-
-        <div id="anchor02"></div>
-        <section id="dates" class="full-wrapper parallax-wrapper dates"> <!-- Tour Dates -->
-        	<div class="parallax" data-velocity="-.3" data-fit="0">
-            	<div class="front-content dates">
-                    <h1>Tour Dates</h1>
-                    <div class="spacer"></div>
-                    <div class="dates-wrapper">
-                    	<ul>
-                        	<li> <!-- List #2 --> <!-- max 5 Date Info elements per li -->
-                            	<div class="date-box"> <!-- Date Info 1 -->
-                                	<div class="info date">
-                                        <div class="day">23</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Los Angeles, CA</div>
-                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 1 -->
-
-                                <div class="date-box"> <!-- Date Info 2 -->
-                                	<div class="info date">
-                                        <div class="day">29</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Boston, MA</div>
-                                        <div class="place"><div class="ico"></div>
-                                        Sugar night Club</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>
-                                    	09:00 pm -10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 2 -->
-
-                                <div class="date-box"> <!-- Date Info 3 -->
-                                	<div class="info date">
-                                        <div class="day">09</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Philadelphia, MA</div>
-                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 3 -->
-
-                                <div class="date-box"> <!-- Date Info 4 -->
-                                	<div class="info date">
-                                        <div class="day">12</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Washington, DC</div>
-                                        <div class="place"><div class="ico"></div>Webster Hall</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 4 -->
-
-                                <div class="date-box"> <!-- Date Info 5 -->
-                                	<div class="info date">
-                                        <div class="day">16</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">New York, NY</div>
-                                        <div class="place"><div class="ico"></div>Howard Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 5 -->
-                            </li>
-
-                        	<li> <!-- List #1 --> <!-- max 5 Date Info elements per li -->
-                            	<div class="date-box"> <!-- Date Info 1 -->
-                                	<div class="info date">
-                                        <div class="day">23</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Los Angeles, CA</div>
-                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 1 -->
-
-                                <div class="date-box"> <!-- Date Info 2 -->
-                                	<div class="info date">
-                                        <div class="day">29</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Boston, MA</div>
-                                        <div class="place"><div class="ico"></div>
-                                        Sugar night Club</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>
-                                    	09:00 pm -10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 2 -->
-
-                                <div class="date-box"> <!-- Date Info 3 -->
-                                	<div class="info date">
-                                        <div class="day">09</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Philadelphia, MA</div>
-                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 3 -->
-
-                                <div class="date-box"> <!-- Date Info 4 -->
-                                	<div class="info date">
-                                        <div class="day">12</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Washington, DC</div>
-                                        <div class="place"><div class="ico"></div>Webster Hall</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 4 -->
-
-                                <div class="date-box"> <!-- Date Info 5 -->
-                                	<div class="info date">
-                                        <div class="day">16</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">New York, NY</div>
-                                        <div class="place"><div class="ico"></div>Howard Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 5 -->
-                            </li>
-                        	<li> <!-- List #3 --> <!-- max 5 Date Info elements per li -->
-                            	<div class="date-box"> <!-- Date Info 1 -->
-                                	<div class="info date">
-                                        <div class="day">23</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Los Angeles, CA</div>
-                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 1 -->
-
-                                <div class="date-box"> <!-- Date Info 2 -->
-                                	<div class="info date">
-                                        <div class="day">29</div>
-                                        <div class="month">Jan</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Boston, MA</div>
-                                        <div class="place"><div class="ico"></div>
-                                        Sugar night Club</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>
-                                    	09:00 pm -10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 2 -->
-
-                                <div class="date-box"> <!-- Date Info 3 -->
-                                	<div class="info date">
-                                        <div class="day">09</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Philadelphia, MA</div>
-                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 3 -->
-
-                                <div class="date-box"> <!-- Date Info 4 -->
-                                	<div class="info date">
-                                        <div class="day">12</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">Washington, DC</div>
-                                        <div class="place"><div class="ico"></div>Webster Hall</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 4 -->
-
-                                <div class="date-box"> <!-- Date Info 5 -->
-                                	<div class="info date">
-                                        <div class="day">16</div>
-                                        <div class="month">Feb</div>
-                                        <div class="year">2014</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="city">New York, NY</div>
-                                        <div class="place"><div class="ico"></div>Howard Theater</div>
-                                    </div>
-                                    <div class="info">
-                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
-                                        <div class="buy"><div class="ico"></div><a href="index.html#">Buy Tickets</a></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div> <!-- end Date Info 5 -->
-                            </li>                        </ul>
-                    </div>
-                    <div class="controller">
-                    	<ul class="dots">
-                        </ul>
-                    </div>
-                    <div class="dates-nav">
-                        <div class="next"></div>
-                        <div class="prev"></div>
-                    </div>
-                </div>
-                <div class="square-bg"></div>
-                <div class="overlay"></div>
-            </div>
-        </section><!-- end Tour Dates -->
-        <div class="clear"></div>
-
-        <div id="anchor03"></div>
-        <div class="main-wrapper">
-            <section id="discography" class="section"><!-- Discography -->
-                <h1>Discography</h1>
-                <div class="spacer"></div>
-                <div class="disc-container">
-                	<ul>
-
-                    	<li><!-- Disc #1 -->
-                        	<div class="disc-img open-disc" id="disc-01.html">
-                            	<img src="{% static "img/discography/thumb-01.jpg" %}">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="disc-info">
-                            	<h2>Aurora LP</h2>
-                                <p>The amazing album <br/>"Aurora LP" is now available</p>
-                                <p><a href="index.html#">Buy Album</a></p>
-                            </div>
-                        </li><!-- end Disc #1 -->
-
-                        <li><!-- Disc #2 -->
-                        	<div class="disc-img open-disc" id="disc-02.html">
-                            	<img src="{% static "img/discography/thumb-02.jpg" %}">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="disc-info">
-                            	<h2>J COLE</h2>
-                                <p>The amazing album <br/>"J Cole" is now available</p>
-                                <p><a href="index.html#">Buy Album</a></p>
-                            </div>
-                        </li><!-- end Disc #2 -->
-
-                        <li><!-- Disc #3 -->
-                        	<div class="disc-img open-disc" id="disc-03.html">
-                            	<img src="{% static "img/discography/thumb-03.jpg" %}">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="disc-info">
-                            	<h2>Black Skinhead</h2>
-                                <p>The amazing album <br/>"Black Skinhead" is now available</p>
-                                <p><a href="index.html#">Buy Album</a></p>
-                            </div>
-                        </li><!-- end Disc #3 -->
-
-                    </ul>
-                </div>
-            </section><!-- end Discography -->
-            <div class="clear"></div>
-            <div id="project-show"></div>
-            <section class="project-window">
-                <div class="project-content"></div><!-- AJAX Dinamic Content -->
-            </section>
-
-        </div>
-
-        <section id="quotes" class="full-wrapper parallax-wrapper quotes"> <!-- Twitter Quotes -->
-        	<div class="parallax" data-velocity="-.3" data-fit="0">
-                <div class="twitter-quotes"></div>
-                <div id="myTweet"></div>
-                <div class="overlay"></div>
-            </div>
-        </section><!-- end Twitter Quotes -->
-        <div class="clear"></div>
-
-        <div id="anchor04"></div>
-        <section class="full-wrapper portfolio"> <!-- Gallery Portfolio -->
-            <h1>Gallery</h1>
-            <div class="spacer"></div>
-
-            <div id="portfolio">
-
-                <div class="section portfoliocontent">
-                    <section id="i-portfolio" class="clear">
-
-                        <div class="ch-grid element">
-                            <img class="ch-item" src="{% static "img/gallery/thumb-01.jpg" %}">
-                            <a class="fancybox img-lightbox" rel="" href="{% static "img/gallery/thumb-01.jpg" %}"> <!-- Set your gallery Group Name in rel="" field, ex: rel="group-one" -->
-                                <div>
-                                    <span class="p-category photo"></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="ch-grid element">
-                            <img class="ch-item" src="{% static "img/gallery/thumb-02.jpg" %}">
-                            <a href="https://www.youtube.com/watch?v=WImWuxHbQCw" rel="" class="fancybox-media">
-                                <div>
-                                    <span class="p-category video"></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="ch-grid element">
-                            <img class="ch-item" src="{% static "img/gallery/thumb-03.jpg" %}">
-                            <a class="fancybox img-lightbox" rel="" href="{% static "img/gallery/thumb-03.jpg" %}">
-                                <div>
-                                    <span class="p-category photo"></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="ch-grid element">
-                            <img class="ch-item" src="{% static "img/gallery/thumb-04.jpg" %}">
-                            <a href="http://vimeo.com/29577474" class="fancybox-media" rel="">
-                                <div>
-                                    <span class="p-category video"></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="ch-grid element">
-                            <img class="ch-item" src="{% static "img/gallery/thumb-05.jpg" %}">
-                            <a class="fancybox img-lightbox" rel="" href="{% static "img/gallery/thumb-05.jpg" %}">
-                                <div>
-                                    <span class="p-category photo"></span>
-                                </div>
-                            </a>
-                        </div>
-
-
-
-                    </section>
-                </div>
-            </div>
-
-        </section><!-- end Gallery Portfolio -->
-        <div class="clear"></div>
 
         <section id="about-us" class="full-wrapper parallax-wrapper about-us">
             <div class="parallax" data-velocity="-.3" data-fit="0">
@@ -735,6 +210,516 @@
 
             </div>
         </section>
+
+        <div id="anchor01"></div>
+        <div class="main-wrapper">
+            <section class="section"><!-- Last News -->
+                <h1>Latest News</h1>
+                <div class="spacer"></div>
+                <div class="last-news-wrapper">
+                    <div class="last-news-container">
+                        <div class="news-nav">
+                            <div class="last-news-next"></div>
+                            <div class="last-news-prev"></div>
+                        </div>
+                        <div class="news-box">
+                            <ul>
+                                <li class="start"></li>
+                                <li id="news-01.html" class="last-news"> <!-- Type One Thumb on Top -->
+                                    <div class="news-thumb">
+                                        <img src="http://www.mannargudiaeaswaran.in/images/gal/SangeethNatak1.gif" height="300" width="300">
+                                    </div>
+                                    <div class="news-info">
+                                        <h1>Sangeet Natak Akademi Puraskar - 2008</h1>
+                                        <!-- <h2>National Academy of Music, Dance & Drama </h2> -->
+                                        <p>
+The National Academy of Music, Dance & Drama awarded Sri Mannargudi Easwaran for the prestigious Sangeet Natak Academi Puraskar, in the field of music for the year 2008.</p>
+                                        <!-- <div class="news-date">2013.08.10</div> -->
+                                    </div>
+                                </li><!-- end Type One -->
+                                <li id="news-02.html" class="last-news"> <!-- Type Two Thumb on Bottom -->
+                                    <div class="news-info">
+                                        <h1>Palghat Mani Award</h1>
+                                        <p>Bangalore based Percussive Arts Centre honours the maestro with the prestigious Palghat Mani award as part of its 25th Thalavadyothsava.</p>
+                                        <!-- <div class="news-date">2013.08.10</div> -->
+                                    </div>
+                                    <div class="news-thumb">
+                                        <img src="http://www.mannargudiaeaswaran.in/images/award_photo.gif" height="300" width="300">
+                                    </div>
+                                </li><!-- end Type Two -->
+                                <li id="news-03.html" class="last-news"> <!-- Type One Thumb on Top -->
+                                    <div class="news-thumb">
+                                        <img src="http://www.mannargudiaeaswaran.in/images/interview.gif" height="300" width="300">
+                                    </div>
+                                    <div class="news-info">
+                                        <h1>Interview on WorldSpace</h1>
+                                        <p>Mannargudi A Easwaran shares experiences of his musical voyage in 'Face to Face', an interview based programme on Shruti, the 24 hr Carnatic music channel of WorldSpace radio.</p>
+                                        <!-- <div class="news-date">2013.08.10</div> -->
+                                    </div>
+                                </li><!-- end Type One -->
+
+                                <li class="end"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section><!-- end Last News -->
+
+            <div class="clear"></div>
+            <div id="news-show"></div>
+            <section class="news-window">
+                <div class="news-content"></div><!-- AJAX Dinamic Content -->
+            </section>
+
+        </div><!-- end Main Wrapper -->
+
+        <div id="anchor02"></div>
+        <section id="dates" class="full-wrapper parallax-wrapper dates"> <!-- Tour Dates -->
+        	<div class="parallax" data-velocity="-.3" data-fit="0">
+            	<div class="front-content dates">
+                    <h1>Tour Dates</h1>
+                    <div class="spacer"></div>
+                    <div class="dates-wrapper">
+                    	<ul>
+                        	<li> <!-- List #2 --> <!-- max 5 Date Info elements per li -->
+                            	<div class="date-box"> <!-- Date Info 1 -->
+                                	<div class="info date">
+                                        <div class="day">23</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Los Angeles, CA</div>
+                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 1 -->
+
+                                <div class="date-box"> <!-- Date Info 2 -->
+                                	<div class="info date">
+                                        <div class="day">29</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Boston, MA</div>
+                                        <div class="place"><div class="ico"></div>
+                                        Sugar night Club</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>
+                                    	09:00 pm -10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 2 -->
+
+                                <div class="date-box"> <!-- Date Info 3 -->
+                                	<div class="info date">
+                                        <div class="day">09</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Philadelphia, MA</div>
+                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 3 -->
+
+                                <div class="date-box"> <!-- Date Info 4 -->
+                                	<div class="info date">
+                                        <div class="day">12</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Washington, DC</div>
+                                        <div class="place"><div class="ico"></div>Webster Hall</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 4 -->
+
+                                <div class="date-box"> <!-- Date Info 5 -->
+                                	<div class="info date">
+                                        <div class="day">16</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">New York, NY</div>
+                                        <div class="place"><div class="ico"></div>Howard Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 5 -->
+                            </li>
+
+                        	<li> <!-- List #1 --> <!-- max 5 Date Info elements per li -->
+                            	<div class="date-box"> <!-- Date Info 1 -->
+                                	<div class="info date">
+                                        <div class="day">23</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Los Angeles, CA</div>
+                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 1 -->
+
+                                <div class="date-box"> <!-- Date Info 2 -->
+                                	<div class="info date">
+                                        <div class="day">29</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Boston, MA</div>
+                                        <div class="place"><div class="ico"></div>
+                                        Sugar night Club</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>
+                                    	09:00 pm -10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 2 -->
+
+                                <div class="date-box"> <!-- Date Info 3 -->
+                                	<div class="info date">
+                                        <div class="day">09</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Philadelphia, MA</div>
+                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 3 -->
+
+                                <div class="date-box"> <!-- Date Info 4 -->
+                                	<div class="info date">
+                                        <div class="day">12</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Washington, DC</div>
+                                        <div class="place"><div class="ico"></div>Webster Hall</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 4 -->
+
+                                <div class="date-box"> <!-- Date Info 5 -->
+                                	<div class="info date">
+                                        <div class="day">16</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">New York, NY</div>
+                                        <div class="place"><div class="ico"></div>Howard Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 5 -->
+                            </li>
+                        	<li> <!-- List #3 --> <!-- max 5 Date Info elements per li -->
+                            	<div class="date-box"> <!-- Date Info 1 -->
+                                	<div class="info date">
+                                        <div class="day">23</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Los Angeles, CA</div>
+                                        <div class="place"><div class="ico"></div>Monarch Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 1 -->
+
+                                <div class="date-box"> <!-- Date Info 2 -->
+                                	<div class="info date">
+                                        <div class="day">29</div>
+                                        <div class="month">Jan</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Boston, MA</div>
+                                        <div class="place"><div class="ico"></div>
+                                        Sugar night Club</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>
+                                    	09:00 pm -10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 2 -->
+
+                                <div class="date-box"> <!-- Date Info 3 -->
+                                	<div class="info date">
+                                        <div class="day">09</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Philadelphia, MA</div>
+                                        <div class="place"><div class="ico"></div>The Fonda Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>11:00 pm - 12:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 3 -->
+
+                                <div class="date-box"> <!-- Date Info 4 -->
+                                	<div class="info date">
+                                        <div class="day">12</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">Washington, DC</div>
+                                        <div class="place"><div class="ico"></div>Webster Hall</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>07:00 pm - 08:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 4 -->
+
+                                <div class="date-box"> <!-- Date Info 5 -->
+                                	<div class="info date">
+                                        <div class="day">16</div>
+                                        <div class="month">Feb</div>
+                                        <div class="year">2014</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="city">New York, NY</div>
+                                        <div class="place"><div class="ico"></div>Howard Theater</div>
+                                    </div>
+                                    <div class="info">
+                                    	<div class="time"><div class="ico"></div>09:00 pm - 10:00 am</div>
+                                        <div class="buy"><div class="ico"></div><a href="/#">Buy Tickets</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> <!-- end Date Info 5 -->
+                            </li>                        </ul>
+                    </div>
+                    <div class="controller">
+                    	<ul class="dots">
+                        </ul>
+                    </div>
+                    <div class="dates-nav">
+                        <div class="next"></div>
+                        <div class="prev"></div>
+                    </div>
+                </div>
+                <div class="square-bg"></div>
+                <div class="overlay"></div>
+            </div>
+        </section><!-- end Tour Dates -->
+        <div class="clear"></div>
+
+        <div id="anchor03"></div>
+        <div class="main-wrapper">
+            <section id="discography" class="section"><!-- Discography -->
+                <h1>Albums</h1>
+                <div class="spacer"></div>
+                <div class="disc-container">
+                	<ul>
+
+                    	<li><!-- Disc #1 -->
+                        	<div class="disc-img open-disc" id="disc-01.html">
+                            	<img src="http://www.mannargudiaeaswaran.in/images/Audio1.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="disc-info">
+                            	<h2>Aurora LP</h2>
+                                <p>Sri Kunnakudi Balamuralikrishna</p>
+                                <p><a href="/#">Buy Album</a></p>
+                            </div>
+                        </li><!-- end Disc #1 -->
+
+                        <li><!-- Disc #2 -->
+                        	<div class="disc-img open-disc" id="disc-02.html">
+                            	<img src="http://www.mannargudiaeaswaran.in/images/Audio2.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="disc-info">
+                            	<h2>J COLE</h2>
+                                <p>Sri Maharajapuram S Ramachandran</p>
+                                <p><a href="/#">Buy Album</a></p>
+                            </div>
+                        </li><!-- end Disc #2 -->
+
+                        <li><!-- Disc #3 -->
+                        	<div class="disc-img open-disc" id="disc-03.html">
+                            	<img src="http://www.mannargudiaeaswaran.in/images/Audio3.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="disc-info">
+                            	<h2>Black Skinhead</h2>
+                                <p>Sri Maharajapuram S Ramachandran</p>
+                                <p><a href="/#">Buy Album</a></p>
+                            </div>
+                        </li><!-- end Disc #3 -->
+                        <li><!-- Disc #1 -->
+                          	<div class="disc-img open-disc" id="disc-01.html">
+                              	<img src="http://www.mannargudiaeaswaran.in/images/Audio1.jpg">
+                                  <div class="overlay"></div>
+                              </div>
+                              <div class="disc-info">
+                              	<h2>Aurora LP</h2>
+                                  <p>Sri Kunnakudi Balamuralikrishna</p>
+                                  <p><a href="/#">Buy Album</a></p>
+                              </div>
+                          </li><!-- end Disc #1 -->
+
+                          <li><!-- Disc #2 -->
+                          	<div class="disc-img open-disc" id="disc-02.html">
+                              	<img src="http://www.mannargudiaeaswaran.in/images/Audio2.jpg">
+                                  <div class="overlay"></div>
+                              </div>
+                              <div class="disc-info">
+                              	<h2>J COLE</h2>
+                                  <p>Sri Maharajapuram S Ramachandran</p>
+                                  <p><a href="/#">Buy Album</a></p>
+                              </div>
+                          </li><!-- end Disc #2 -->
+
+                          <li><!-- Disc #3 -->
+                          	<div class="disc-img open-disc" id="disc-03.html">
+                              	<img src="http://www.mannargudiaeaswaran.in/images/Audio3.jpg">
+                                  <div class="overlay"></div>
+                              </div>
+                              <div class="disc-info">
+                              	<h2>Black Skinhead</h2>
+                                  <p>Sri Maharajapuram S Ramachandran</p>
+                                  <p><a href="/#">Buy Album</a></p>
+                              </div>
+                          </li><!-- end Disc #3 -->
+
+
+
+                    </ul>
+                </div>
+            </section><!-- end Discography -->
+            <div class="clear"></div>
+            <div id="project-show"></div>
+            <section class="project-window">
+                <div class="project-content"></div><!-- AJAX Dinamic Content -->
+            </section>
+
+        </div>
+
+
+        <section class="full-wrapper portfolio"> <!-- Gallery Portfolio -->
+            <h1>Gallery</h1>
+            <div class="spacer"></div>
+
+            <div id="portfolio">
+
+                <div class="section portfoliocontent">
+                    <section id="i-portfolio" class="clear">
+
+                        <div class="ch-grid element">
+                            <img class="ch-item" src="http://www.mannargudiaeaswaran.in/images/gal/vintage_1.gif">
+                            <a class="fancybox img-lightbox" rel="" href="http://www.mannargudiaeaswaran.in/images/gal/vintage_1.gif"> <!-- Set your gallery Group Name in rel="" field, ex: rel="group-one" -->
+                                <div>
+                                    <span class="p-category photo"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="ch-grid element">
+                          <img class="ch-item" src="http://www.mannargudiaeaswaran.in/images/gal/vintage_2.gif">
+                          <a href="https://www.youtube.com/watch?v=E7PLgnsFBaI" class="fancybox-media" rel="">
+                                <div>
+                                    <span class="p-category video"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="ch-grid element">
+                          <img class="ch-item" src="http://www.mannargudiaeaswaran.in/images/gal/vintage_3.gif">
+                          <a class="fancybox img-lightbox" rel="" href="http://www.mannargudiaeaswaran.in/images/gal/vintage_3.gif"> <!-- Set your gallery Group Name in rel="" field, ex: rel="group-one" -->
+                                <div>
+                                    <span class="p-category photo"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="ch-grid element">
+                            <img class="ch-item" src="{% static "img/gallery/vid1thumb.png" %}">
+                            <a href="https://www.youtube.com/watch?v=E7PLgnsFBaI" class="fancybox-media" rel="">
+                                <div>
+                                    <span class="p-category video"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="ch-grid element">
+                          <img class="ch-item" src="http://www.mannargudiaeaswaran.in/images/gal/vintage_4.gif">
+                          <a class="fancybox img-lightbox" rel="" href="http://www.mannargudiaeaswaran.in/images/gal/vintage_4.gif"> <!-- Set your gallery Group Name in rel="" field, ex: rel="group-one" -->
+                                <div>
+                                    <span class="p-category photo"></span>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                    </section>
+                </div>
+            </div>
+
+        </section><!-- end Gallery Portfolio -->
+        <div class="clear"></div>
+
+
         <div class="clear"></div>
 
         <section class="full-wrapper parallax-wrapper contact"> <!-- Contact -->

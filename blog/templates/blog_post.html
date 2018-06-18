@@ -1,16 +1,147 @@
-<title>{{ post.seo_title }}</title>
-<meta name="description" content="{{ post.meta_description }}">
+{% load i18n staticfiles timetags %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>{{ post.seo_title }}</title>
+        <meta name="description" content="{{ post.meta_description }}">
 
-<!-- Post title -->
-<h2>{{ post.title }}</h2>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Post author + Publish date -->
-{# Posted by <a href="{% url 'blog_author' author.slug %}">{{ post.author.first_name }} {{ post.author.last_name }}</a> on {{ post.published }} #}
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<!-- Post categories -->
-{% for category in post.categories %}
-<a href="{% url 'blog_category' category.slug %}">{{ category.name }}</a>
-{% endfor %}
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+        <link rel="stylesheet" href="{% static "css/sonorama.css" %}">
+        <link rel="stylesheet" href="{% static "css/blog.css" %}">
+        <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+        <link rel="stylesheet" href="{% static "css/isotope.css" %}">
+        <link rel="stylesheet" href="{% static "js/fancybox/jquery.fancybox.css" %}">
+        <link rel="stylesheet" href="{% static "fa/css/fontawesome-all.min.css" %}">
 
-<!-- Post body -->
-{{ post.body|safe }}
+
+
+	<link href='http://fonts.googleapis.com/css?family=<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600italic,600,700,700italic,900' rel='stylesheet' type='text/css'>:400,200,200italic,300,300italic,400italic,600italic,600,700,700italic,900' rel='stylesheet' type='text/css'>
+
+        <!-- Scripts JS -->
+        <script src="js/vendor/modernizr-2.6.2.min.js/" %}"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="mask">
+            <div class="loader">
+              <img src="{% static "img/icons/loading.gif" %}">
+            </div>
+        </div>
+
+
+
+        <div class="full-wrapper header">
+        	<div class="main-logo">
+            	<!-- <a class="symbol" href="/#"><div class="navbar-brand"><ul><li></li><li></li><li></li></ul></div>sonorama<span>.</span></a> -->
+              <img src="{% static "img/nadagruha.png" %}"   height="35">
+            </div>
+
+            <nav class="main-menu">
+            	<ul>
+                	  <li><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
+                    <li class="current"><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+
+            <nav id="nav2" role="navigation">
+                <a class="jump-menu" title="Show navigation">Show navigation</a>
+                <ul>
+                    <li><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+      	<div class="page-wrap container">
+      			<div class="grid-12">
+
+
+
+              <!-- Post title -->
+              <h2 style="color:white;">{{ post.title }}</h2>
+
+              <!-- Post author + Publish date -->
+              <h3 style="color:white;">{# Posted by <a href="{% url 'blog_author' author.slug %}">{{ post.author.first_name }} {{ post.author.last_name }}</a> on {{ post.published }} #}</h3>
+
+              <!-- Post categories -->
+              {% for category in post.categories %}
+              <a href="{% url 'blog_category' category.slug %}">{{ category.name }}</a>
+              {% endfor %}
+
+              <!-- Post body -->
+              <span style="color:white;">{{ post.body|safe }}</span>
+
+
+      			</div>
+
+
+      	</div>
+
+
+              <div class="clear"></div>
+
+              <section class="social-footer">
+                  <h1>Social Networks</h1>
+                  <div class="spacer"></div>
+                  <div class="footer-container">
+                      <div class="social-ico s-facebook"></div>
+                      <div class="social-ico s-youtube"></div>
+                      <div class="social-ico s-plus"></div>
+                      <div class="social-ico s-twitter"></div>
+                      <div class="social-ico s-soundcloud"></div>
+                  </div>
+                  <div class="clear"></div>
+              </section>
+
+              <!-- Scripts JS -->
+            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.10.2.min.js" %}"><\/script>')</script> -->
+            <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
+            <script src="{% static "js/superslides-0.6.2/dist/jquery.superslides.js" %}" type="text/javascript" charset="utf-8"></script>
+            <script src="{% static "js/jquery.isotope.min.js" %}"></script>
+    	  <script type="text/javascript" src="{% static "js/player/audio.js" %}"></script> <!-- Audio Player -->
+            <script type="text/javascript" src="{% static "js/jquery.hoverdir.js" %}"></script>
+            <script type="text/javascript" src="{% static "js/jquery.nav.js" %}"></script>
+            <script src="{% static "js/news.js" %}"></script>
+            <script src="{% static "js/discography.js" %}"></script>
+            <script src="{% static "js/tweets.js" %}"></script>
+            <script src="{% static "js/jquery.scrolly.js" %}"></script>
+            <script src="{% static "js/fancybox/jquery.fancybox.js" %}"></script>
+            <script src="{% static "js/fancybox/helpers/jquery.fancybox-media.js" %}"></script>
+            <script src="{% static "js/color-picker.js" %}"></script>
+            <script src="{% static "js/jquery.validate.js" %}"></script>
+            <script src="{% static "js/jquery.form.js" %}"></script>
+            <script src="{% static "js/plugins.js" %}"></script>
+            <script src="{% static "js/sonorama.js" %}"></script>
+
+      </body>
+      </html>

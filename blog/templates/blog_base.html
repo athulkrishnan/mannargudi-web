@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Blog</title>
+        <title>Welcome to Nada Gruha - The official website of Vidwan Mannargudi A Easwaran</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,8 +19,9 @@
         <link rel="stylesheet" href="{% static "css/blog.css" %}">
         <link rel="stylesheet" href="{% static "css/responsive.css" %}">
         <link rel="stylesheet" href="{% static "css/isotope.css" %}">
-        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" %}">
- 	  <link href="http://jellydemos.com/html/sonorama/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static "js/fancybox/jquery.fancybox.css" %}">
+        <link rel="stylesheet" href="{% static "fa/css/fontawesome-all.min.css" %}">
+
 
 
 	<link href='http://fonts.googleapis.com/css?family=<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600italic,600,700,700italic,900' rel='stylesheet' type='text/css'>:400,200,200italic,300,300italic,400italic,600italic,600,700,700italic,900' rel='stylesheet' type='text/css'>
@@ -29,65 +30,67 @@
         <script src="js/vendor/modernizr-2.6.2.min.js/" %}"></script>
 
     </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-      <body>
-              <!--[if lt IE 7]>
-                  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-              <![endif]-->
-
-              <div id="mask">
-                  <div class="loader">
-                    <img src="{% static "img/icons/loading.gif" %}">
-                  </div>
-              </div>
-
+        <div id="mask">
+            <div class="loader">
+              <img src="{% static "img/icons/loading.gif" %}">
+            </div>
+        </div>
 
 
-              <div class="full-wrapper header">
-              	<div class="main-logo">
-                  	<a class="symbol" href="/"><div class="navbar-brand"><ul><li></li><li></li><li></li></ul></div>sonorama<span>.</span></a>
-                  </div>
 
-                  <nav class="main-menu">
-                  	<ul>
-                      	<li><a href="/">Home</a></li>
-                          <li><a href="index.html#anchor01">Last News</a></li>
-                          <li><a href="index.html#anchor02">Gigs</a></li>
-                          <li><a href="index.html#anchor03">Discography</a></li>
-                          <li><a href="index.html#anchor04">Gallery</a></li>
-                          <li><a href="index.html#anchor05">Contact</a></li>
-                          <li class="current"><a href="/blog">Blog</a></li>
+        <div class="full-wrapper header">
+        	<div class="main-logo">
+            	<!-- <a class="symbol" href="/#"><div class="navbar-brand"><ul><li></li><li></li><li></li></ul></div>sonorama<span>.</span></a> -->
+              <img src="{% static "img/nadagruha.png" %}"   height="35">
+            </div>
 
-                      </ul>
-                  </nav>
+            <nav class="main-menu">
+            	<ul>
+                	  <li><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
+                    <li class="current"><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
 
-                  <nav id="nav2" role="navigation">
-                      <a class="jump-menu" title="Show navigation">Show navigation</a>
-                      <ul>
-                          <li><a href="/">Home</a></li>
-                          <li><a href="index.html#anchor01">Last News</a></li>
-                          <li><a href="index.html#anchor02">Gigs</a></li>
-                          <li><a href="index.html#anchor03">Discography</a></li>
-                          <li><a href="index.html#anchor04">Gallery</a></li>
-                          <li><a href="index.html#anchor05">Contact</a></li>
-                          <li class="current"><a href="/blog">Blog</a></li>
-                      </ul>
-                  </nav>
-              </div>
+            <nav id="nav2" role="navigation">
+                <a class="jump-menu" title="Show navigation">Show navigation</a>
+                <ul>
+                    <li><a href="/#anchor0">Home</a></li>
+                    <li><a href="/#anchor01">About</a></li>
+                    <li><a href="/#anchor01">News</a></li>
+                    <li><a href="/#anchor02">Concerts</a></li>
+                    <li><a href="/#anchor03">Albums</a></li>
+                    <li><a href="/#anchor04">Gallery</a></li>
+                    <li><a href="/#anchor05">Contact</a></li>
+                    <li class="current"><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
 
-              <div id="anchor0"></div>
+
 
       	<div class="page-wrap container">
-      			<div class="grid-9">
+      			<div class="grid-12">
               {% for post in recent_posts %}
       				<article>
-      					<div class="pdate"><span>Date</span></div>
+      					<div class="pdate"><span></span></div>
       					<div class="post-meta">
       						By: {{ post.author.first_name }}
       					</div>
       					<h3><a href="blog_single.html"><a href="{% url 'blog_post' post.slug %}">{{ post.title }}</a></a></h3>
                 <img src="{{ post.featured_image }}" class="img-responsive" alt="">
                 <p>{{ post.summary }} </p>
+                <a href="{% url 'blog_post' post.slug %}">Read More</a>
       				</article>
               {% endfor %}
 
@@ -128,24 +131,24 @@
 
               <!-- Scripts JS -->
             <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="{% static "theme/js/vendor/jquery-1.10.2.min.js" %}"><\/script>')</script> -->
-            <script src="{% static "theme/js/jquery-1.11.0.min.js" %}"></script>
-            <script src="{% static "theme/js/superslides-0.6.2/dist/jquery.superslides.js" %}" type="text/javascript" charset="utf-8"></script>
-            <script src="{% static "theme/js/jquery.isotope.min.js" %}"></script>
-    	  <script type="text/javascript" src="{% static "theme/js/player/audio.js" %}"></script> <!-- Audio Player -->
-            <script type="text/javascript" src="{% static "theme/js/jquery.hoverdir.js" %}"></script>
-            <script type="text/javascript" src="{% static "theme/js/jquery.nav.js" %}"></script>
-            <script src="{% static "theme/js/news.js" %}"></script>
-            <script src="{% static "theme/js/discography.js" %}"></script>
-            <script src="{% static "theme/js/tweets.js" %}"></script>
-            <script src="{% static "theme/js/jquery.scrolly.js" %}"></script>
-            <script src="{% static "theme/js/fancybox/jquery.fancybox.js" %}"></script>
-            <script src="{% static "theme/js/fancybox/helpers/jquery.fancybox-media.js" %}"></script>
-            <script src="{% static "theme/js/color-picker.js" %}"></script>
-            <script src="{% static "theme/js/jquery.validate.js" %}"></script>
-            <script src="{% static "theme/js/jquery.form.js" %}"></script>
-            <script src="{% static "theme/js/plugins.js" %}"></script>
-            <script src="{% static "theme/js/sonorama.js" %}"></script>
+            <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.10.2.min.js" %}"><\/script>')</script> -->
+            <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
+            <script src="{% static "js/superslides-0.6.2/dist/jquery.superslides.js" %}" type="text/javascript" charset="utf-8"></script>
+            <script src="{% static "js/jquery.isotope.min.js" %}"></script>
+    	  <script type="text/javascript" src="{% static "js/player/audio.js" %}"></script> <!-- Audio Player -->
+            <script type="text/javascript" src="{% static "js/jquery.hoverdir.js" %}"></script>
+            <script type="text/javascript" src="{% static "js/jquery.nav.js" %}"></script>
+            <script src="{% static "js/news.js" %}"></script>
+            <script src="{% static "js/discography.js" %}"></script>
+            <script src="{% static "js/tweets.js" %}"></script>
+            <script src="{% static "js/jquery.scrolly.js" %}"></script>
+            <script src="{% static "js/fancybox/jquery.fancybox.js" %}"></script>
+            <script src="{% static "js/fancybox/helpers/jquery.fancybox-media.js" %}"></script>
+            <script src="{% static "js/color-picker.js" %}"></script>
+            <script src="{% static "js/jquery.validate.js" %}"></script>
+            <script src="{% static "js/jquery.form.js" %}"></script>
+            <script src="{% static "js/plugins.js" %}"></script>
+            <script src="{% static "js/sonorama.js" %}"></script>
 
       </body>
       </html>
